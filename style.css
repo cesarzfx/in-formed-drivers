@@ -1,0 +1,164 @@
+* { 
+  box-sizing: border-box; 
+}
+body { 
+  margin: 0; 
+  font-family: Segoe UI, Arial, sans-serif;
+  background: radial-gradient(circle at top, #dfe8ee 0%, #cfdbe2 35%, #c6d3db 100%);
+  color: #15213a;
+}
+
+.page {
+  max-width: 980px;
+  margin: 28px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+.site-header {
+  padding: 22px 18px 14px;
+  border-bottom: 1px solid #9aa3ab;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 12px;
+  text-align: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.brand-text h1 {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.brand-text p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #6b778c;
+}
+
+.car-form {
+  padding: 22px 22px 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.panel {
+  border: 2px solid #cfdbe6;
+  border-radius: 8px;
+  padding: 10px 16px 16px;
+}
+
+.panel legend {
+  padding: 0 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: #1d2b55;
+}
+
+.field {
+  margin-top: 14px;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2a3553;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #cfdbe6;
+  border-radius: 6px;
+  padding: 10px 10px;
+  font-size: 14px;
+  background: #fff;
+}
+
+textarea { 
+  resize: vertical; 
+}
+
+input[type="color"] {
+  width: 86px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #cfdbe6;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+button[type="submit"] {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 26px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  background: #c7262b;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  filter: brightness(0.95);
+}
+
+.group-label {
+  margin: 14px 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2a3553;
+}
+
+.field label:has(input[type="checkbox"]),
+.field label:has(input[type="radio"]) {
+  font-weight: 500;
+}
+
+.range-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.range-col label {
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #c7262b;
+  font-weight: 700;
+}
+
+/* Responsive: stack panels on smaller screens */
+@media (max-width: 760px) {
+  .grid { grid-template-columns: 1fr; }
+}
